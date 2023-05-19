@@ -1,35 +1,18 @@
-let icon1 = document.getElementById("icon1");
-let menu1 = document.getElementById("menu1");
-const showMenu1 = (flag) => {
-    if (flag) {
-        icon1.classList.toggle("rotate-180");
-        menu1.classList.toggle("hidden")
+alert('ddd');
+
+
+function pullDown(arrow) {
+    console.log("Neshto");
+    //const paragraph = document.getElementById(id);
+    const arr = document.getElementById(arrow);
+    if (arr.classList.contains("fa-angle-down")) {
+      //paragraph.style.height = paragraph.firstElementChild.offsetHeight + "px";
+      arr.classList.remove("fa-angle-down");
+      arr.classList.add("fa-angle-up");
+    }
+    else{
+        //paragraph.style.height = "149px
+        arr.classList.remove("fa-angle-up");
+        arr.classList.add("fa-angle-down");
     }
 }
-let icon2 = document.getElementById("icon2");
-
-const showMenu2 = (flag) => {
-    if (flag) {
-        icon2.classList.toggle("rotate-180");   
-    }
-}
-let icon3 = document.getElementById("icon3");
-
-const showMenu3 = (flag) => {
-    if (flag) {
-        icon3.classList.toggle("rotate-180");
-    }
-};
-
-let Main = document.getElementById("Main");
-let open = document.getElementById("open");
-let close = document.getElementById("close")
-
-const showNav = (flag) => {
-    if (flag) {
-        Main.classList.toggle("-translate-x-full")
-        Main.classList.toggle("translate-x-0")
-        open.classList.toggle("hidden");
-        close.classList.toggle("hidden")
-    } 
-};
