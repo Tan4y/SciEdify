@@ -4,13 +4,26 @@
     <title>SciEdify</title>
     <script src="/SciEdify/app/templates/homepage.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .bg {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(
+          to top,
+          pink 0%,
+          pink 50%,
+          paleturquoise 50%,
+          paleturquoise 100%
+        );
+      }
+    </style>
   </head>
 
   <body>
-    <div class="flex items-center bg-cyan-100">
+    <div class="flex items-center">
       <div
         id="Main"
-        class="xl:rounded-r transform xl:translate-x-0 ease-in-out transition flex justify-start items-start h-screen w-64 bg-gray-900 flex-col"
+        class="fixed top-0 left-0 xl:rounded-r transform xl:translate-x-0 ease-in-out transition flex justify-start items-start h-screen w-64 bg-gray-900 flex-col"
       >
         <div
           class="hidden xl:flex justify-start p-6 items-center space-x-3 px-14"
@@ -48,8 +61,44 @@
         </div>
       </div>
       <div
-        class="text-gray-900 text-center ext-gray-950 text-[24px] justify-center w-screen"
-      ></div>
+        class="absolute top-0 text-center text-[24px] justify-center right-0 left-64"
+      >
+        <div class="h-screen bg-cyan-100 text-gray-900 py-10">
+          <h1 class="text-6xl uppercase">Content</h1>
+          <div
+            class="border-t-8 border-gray-900 py-10 grid gap-y-8 grid-cols-2 mt-10 uppercase h-5/6 place-content-center"
+          >
+            <div><a href="#CellBiology">Cell biology</a></div>
+            <div><a href="#HumanSystems">Human systems</a></div>
+            <div><a href="#Immunology">Immunology</a></div>
+            <div><a href="#Genetic">Genetic</a></div>
+            <div><a href="#Botanic">Botanic</a></div>
+            <div><a href="#Evolution">Evolution</a></div>
+            <div><a href="#Zoology">Zoology</a></div>
+            <div><a href="#MolecularBiology">Molecular biology</a></div>
+          </div>
+        </div>
+        <div class="bg-gradient-to-b from-cyan-100 to-pink-200">
+          <br /><br />
+        </div>
+        <div class="bg-pink-200 text-gray-900">
+          <h1
+            id="CellBiology"
+            style="
+              background-image: url('/SciEdify/app/templates/images/pink_flowers.jpg');
+            "
+            class="text-6xl uppercase py-10 border-b-4 border-gray-900"
+          >
+            Cell biology
+          </h1>
+          <p class="py-10">
+            Cell biology is the study of cell structure and function, and it
+            revolves around the concept that the cell is the fundamental unit of
+            life. Focusing on the cell permits a detailed understanding of the
+            tissues and organisms that cells compose.
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 </html>

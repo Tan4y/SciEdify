@@ -6,6 +6,10 @@ def app(request):
      template = loader.get_template('homepage.html')
      return HttpResponse(template.render())
 
+def biology(request):
+     bio = loader.get_template('biology.html')
+     return HttpResponse(bio.render())
+
 def chemistry(request):
      chem = loader.get_template('chemistry.html')
      return HttpResponse(chem.render())
