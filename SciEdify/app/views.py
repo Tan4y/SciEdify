@@ -13,3 +13,11 @@ def biology(request):
 def chemistry(request):
      chem = loader.get_template('chemistry.html')
      return HttpResponse(chem.render())
+
+def geography(request):
+     chem = loader.get_template('geography.html')
+     return HttpResponse(chem.render())
+
+def mathematics(request):
+     chem = loader.get_template('mathematics.html')
+     return HttpResponse(chem.render())

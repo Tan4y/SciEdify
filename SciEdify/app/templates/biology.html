@@ -4,19 +4,10 @@
     <title>SciEdify</title>
     <script src="/SciEdify/app/templates/homepage.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      .bg {
-        width: 100%;
-        height: 100vh;
-        background: linear-gradient(
-          to top,
-          pink 0%,
-          pink 50%,
-          paleturquoise 50%,
-          paleturquoise 100%
-        );
-      }
-    </style>
+    <script
+      src="https://kit.fontawesome.com/4a6278922f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -32,31 +23,33 @@
             src="https://tuk-cdn.s3.amazonaws.com/can-uploader/sidebar2-svg1.svg"
             alt="logo"
           />
-          <p class="text-2xl leading-6 text-white pr-20">SciEdify</p>
+          <a href="/app/" class="text-2xl leading-6 text-white pr-20"
+            >SciEdify</a
+          >
         </div>
         <div
           class="flex flex-col justify-start px-6 border-b border-gray-600 w-full"
         ></div>
         <div class="flex flex-col justify-start px-6 w-full">
-          <button
-            class="bg-cyan-100 text-gray-900 font-bold rounded-md h-8 mt-4 focus:outline-none focus:text-indigo-400 flex justify-between items-center w-full py-5 space-x-14"
-          >
-            <p class="text-sm leading-5 uppercase px-[72px]">BIOLIGY</p>
-          </button>
-          <button
-            class="hover:bg-cyan-100 delay-150 duration-300 hover:text-gray-900 hover:font-bold rounded-md h-8 mt-4 focus:outline-none focus:text-indigo-400 text-white flex justify-between items-center w-full py-5 space-x-14"
-          >
-            <p class="text-sm leading-5 uppercase px-[61px]">CHEMISTRY</p>
-          </button>
-          <button
-            class="hover:bg-cyan-100 delay-150 duration-300 hover:text-gray-900 hover:font-bold rounded-md h-8 mt-4 focus:outline-none focus:text-indigo-400 text-white flex justify-between items-center w-full py-5 space-x-14"
-          >
-            <p class="text-sm leading-5 uppercase px-[59px]">GEOGRAPHY</p>
-          </button>
-          <button
-            class="hover:bg-cyan-100 delay-150 duration-300 hover:text-gray-900 hover:font-bold rounded-md h-8 mt-4 focus:outline-none focus:text-indigo-400 text-white flex justify-between items-center w-full py-5 space-x-14"
-          >
-            <p class="text-sm leading-5 uppercase px-[54px]">MATHEMATICS</p>
+            <a
+            href="biology.html"
+            class="text-sm leading-5 uppercase px-[72px] bg-cyan-100 text-gray-900 font-bold rounded-md h-8 mt-4 focus:outline-none focus:text-indigo-400 flex justify-between items-center w-full py-5 space-x-14"
+          >BIOLIGY
+          </a>
+          <a
+          href="chemistry.html"
+            class="text-sm leading-5 uppercase px-[61px] hover:bg-cyan-100 delay-150 duration-300 hover:text-gray-900 hover:font-bold rounded-md h-8 mt-4 focus:outline-none focus:text-indigo-400 text-white flex justify-between items-center w-full py-5 space-x-14"
+          >CHEMISTRY
+          </a>
+          <a
+            class="text-sm leading-5 uppercase px-[59px] hover:bg-cyan-100 delay-150 duration-300 hover:text-gray-900 hover:font-bold rounded-md h-8 mt-4 focus:outline-none focus:text-indigo-400 text-white flex justify-between items-center w-full py-5 space-x-14"
+          >GEOGRAPHY
+          </a>
+          <a
+            href="mathematics.html"
+            class="text-sm leading-5 uppercase px-[54px] hover:bg-cyan-100 delay-150 duration-300 hover:text-gray-900 hover:font-bold rounded-md h-8 mt-4 focus:outline-none focus:text-indigo-400 text-white flex justify-between items-center w-full py-5 space-x-14"
+          >MATHEMATICS
+          </a>
           </button>
         </div>
       </div>
@@ -64,24 +57,25 @@
         class="absolute top-0 text-center text-[24px] justify-center right-0 left-64"
       >
         <div class="h-screen bg-cyan-100 text-gray-900 py-10">
-          <h1 class="text-6xl uppercase">Content</h1>
+          <h1 id="Content" class="text-6xl uppercase">Content</h1>
           <div
             class="border-t-8 border-gray-900 py-10 grid gap-y-8 grid-cols-2 mt-10 uppercase h-5/6 place-content-center"
           >
             <div><a href="#CellBiology">Cell biology</a></div>
             <div><a href="#HumanSystems">Human systems</a></div>
-            <div><a href="#Immunology">Immunology</a></div>
+            <div><a href="#Biochemistry">Biochemistry</a></div>
             <div><a href="#Genetic">Genetic</a></div>
             <div><a href="#Botanic">Botanic</a></div>
             <div><a href="#Evolution">Evolution</a></div>
             <div><a href="#Zoology">Zoology</a></div>
-            <div><a href="#MolecularBiology">Molecular biology</a></div>
+            <div><a href="#Immunology">Immunology</a></div>
           </div>
         </div>
-        <div class="bg-gradient-to-b from-cyan-100 to-pink-200">
+        <!-- 
+        <div class="bg-gradient-to-b from-cyan-100 to-cyan-300">
           <br /><br />
         </div>
-        <div class="bg-pink-200 text-gray-900">
+        <div class="h-screen bg-cyan-300 text-gray-900">
           <h1
             id="CellBiology"
             style="
@@ -91,13 +85,150 @@
           >
             Cell biology
           </h1>
-          <p class="py-10">
-            Cell biology is the study of cell structure and function, and it
-            revolves around the concept that the cell is the fundamental unit of
-            life. Focusing on the cell permits a detailed understanding of the
-            tissues and organisms that cells compose.
-          </p>
+          <p class="py-10"></p>
         </div>
+
+        <div class="bg-gradient-to-b from-cyan-300 to-rose-100">
+          <br /><br />
+        </div>
+        <div class="h-screen bg-rose-100 text-gray-900">
+          <h1
+            id="Immunology"
+            style="
+              background-image: url('/SciEdify/app/templates/images/pink_flowers.jpg');
+            "
+            class="text-6xl uppercase py-10 border-b-4 border-gray-900"
+          >
+            Immunology
+          </h1>
+          <p class="py-10"></p>
+        </div>
+
+        <div class="bg-gradient-to-b from-rose-100 to-pink-300">
+          <br /><br />
+        </div>
+        <div class="h-screen bg-pink-300 text-gray-900">
+          <h1
+            id="Botanic"
+            style="
+              background-image: url('/SciEdify/app/templates/images/pink_flowers.jpg');
+            "
+            class="text-6xl uppercase py-10 border-b-4 border-gray-900"
+          >
+            Botanic
+          </h1>
+          <p class="py-10"></p>
+        </div> -->
+        <div class="h-screen bg-gradient-to-b from-cyan-100 to-cyan-300">
+          <h1
+            id="CellBiology"
+            style="
+              background-image: url('/SciEdify/app/templates/images/pink_flowers.jpg');
+            "
+            class="text-6xl uppercase py-10 border-b-4 border-gray-900"
+          >
+            Cell biology
+          </h1>
+          <p class="py-10"></p>
+        </div>
+
+        <div class="h-screen bg-gradient-to-b from-cyan-300 to-rose-100">
+          <h1
+            id="Biochemistry"
+            style="
+              background-image: url('/SciEdify/app/templates/images/pink_flowers.jpg');
+            "
+            class="text-6xl uppercase py-10 border-b-4 border-gray-900"
+          >
+            Biochemistry
+          </h1>
+          <p class="py-10"></p>
+        </div>
+
+        <div class="h-screen bg-gradient-to-b from-rose-100 to-indigo-200">
+          <h1
+            id="Botanic"
+            style="
+              background-image: url('/SciEdify/app/templates/images/pink_flowers.jpg');
+            "
+            class="text-6xl uppercase py-10 border-b-4 border-gray-900"
+          >
+            Botanic
+          </h1>
+          <p class="py-10"></p>
+        </div>
+
+        <div class="h-screen bg-gradient-to-b from-indigo-200 to-yellow-200">
+          <h1
+            id="Zoology"
+            style="
+              background-image: url('/SciEdify/app/templates/images/pink_flowers.jpg');
+            "
+            class="text-6xl uppercase py-10 border-b-4 border-gray-900"
+          >
+            Zoology
+          </h1>
+          <p class="py-10"></p>
+        </div>
+
+        <div class="h-screen bg-gradient-to-b from-yellow-200 to-orange-200">
+          <h1
+            id="HumanSystems"
+            style="
+              background-image: url('/SciEdify/app/templates/images/pink_flowers.jpg');
+            "
+            class="text-6xl uppercase py-10 border-b-4 border-gray-900"
+          >
+            Human Systems
+          </h1>
+          <p class="py-10"></p>
+        </div>
+
+        <div class="h-screen bg-gradient-to-b from-orange-200 to-violet-300">
+          <h1
+            id="Genetic"
+            style="
+              background-image: url('/SciEdify/app/templates/images/pink_flowers.jpg');
+            "
+            class="text-6xl uppercase py-10 border-b-4 border-gray-900"
+          >
+            Genetic
+          </h1>
+          <p class="py-10"></p>
+        </div>
+
+        <div class="h-screen bg-gradient-to-b from-violet-300 to-teal-200">
+          <h1
+            id="Evolution"
+            style="
+              background-image: url('/SciEdify/app/templates/images/pink_flowers.jpg');
+            "
+            class="text-6xl uppercase py-10 border-b-4 border-gray-900"
+          >
+            Evolution
+          </h1>
+          <p class="py-10"></p>
+        </div>
+
+        <div class="h-screen bg-gradient-to-b from-teal-200 to-amber-200">
+          <h1
+            id="Immunology"
+            style="
+              background-image: url('/SciEdify/app/templates/images/pink_flowers.jpg');
+            "
+            class="text-6xl uppercase py-10 border-b-4 border-gray-900"
+          >
+            Immunology
+          </h1>
+          <p class="py-10"></p>
+        </div>
+
+        <a
+          href="#Content"
+          class="fixed bottom-8 right-8 w-10 bg-gray-900 hover:bg-gray-800 hover:text-gray-100 duration-300 rounded-full text-white"
+        >
+          <p>⬆</p>
+        </a>
       </div>
     </div>
   </body>
