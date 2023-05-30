@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -14,7 +16,7 @@
     <div class="flex items-center">
       <div
         id="Main"
-        class="fixed top-0 left-0 xl:rounded-r transform xl:translate-x-0 ease-in-out transition flex justify-start items-start h-screen w-64 bg-gray-900 flex-col"
+        class="fixed top-0 left-0 transform xl:translate-x-0 ease-in-out transition flex justify-start items-start h-screen w-64 bg-gray-900 flex-col"
       >
         <div
           class="hidden xl:flex justify-start p-6 items-center space-x-3 px-14"
@@ -28,7 +30,7 @@
           >
         </div>
         <div
-          class="flex flex-col justify-start px-6 border-b border-gray-600 w-full"
+          class="flex flex-col justify-start px-6 border-b mx-7 border-gray-600 w-3/4"
         ></div>
         <div class="flex flex-col justify-start px-6 w-full">
             <a
@@ -42,6 +44,7 @@
           >CHEMISTRY
           </a>
           <a
+            href="geography.html"
             class="text-sm leading-5 uppercase px-[59px] hover:bg-cyan-100 delay-150 duration-300 hover:text-gray-900 hover:font-bold rounded-md h-8 mt-4 focus:outline-none focus:text-indigo-400 text-white flex justify-between items-center w-full py-5 space-x-14"
           >GEOGRAPHY
           </a>
@@ -56,10 +59,13 @@
       <div
         class="absolute top-0 text-center text-[24px] justify-center right-0 left-64"
       >
-        <div class="h-screen bg-cyan-100 text-gray-900 py-10">
-          <h1 id="Content" class="text-6xl uppercase">Content</h1>
+        <div id="Content" class="h-screen bg-cyan-100 text-gray-900 py-10">
+          <div 
+            class="flex flex-col justify-start py-1 border-t-8 mx-7 border-gray-900"
+          ></div>
+          <h1 class="mx-7 bg-gray-900 py-10 text-white text-6xl uppercase">Content</h1>
           <div
-            class="border-t-8 border-gray-900 py-10 grid gap-y-8 grid-cols-2 mt-10 uppercase h-5/6 place-content-center"
+            class="mx-7 border-t-8 border-gray-900 py-10 grid gap-y-8 grid-cols-2 mt-2 uppercase h-5/6 place-content-center"
           >
             <div><a href="#CellBiology">Cell biology</a></div>
             <div><a href="#HumanSystems">Human systems</a></div>
@@ -119,26 +125,82 @@
           </h1>
           <p class="py-10"></p>
         </div> -->
-        <div class="h-screen bg-gradient-to-b from-cyan-100 to-cyan-300">
+        <div class="h-full bg-gradient-to-b from-cyan-100 to-cyan-300"> 
           <h1
             id="CellBiology"
-            style="
-              background-image: url('/SciEdify/app/templates/images/pink_flowers.jpg');
-            "
-            class="text-6xl uppercase py-10 border-b-4 border-gray-900"
+            class="bg-gray-900 border-8 border-cyan-100 text-white text-6xl uppercase py-10"
           >
             Cell biology
           </h1>
-          <p class="py-10"></p>
+          <div class="text-left whitespace-pre-line pb-10 mb-10 mx-28">
+          <p class="font-serif">
+            Cell biology is a branch of biology that studies structure, function and behaviour of cells which are the basic units of life, responsible for the living and functioning organisms. There are two types of cells: Prokaryotic and Eukaryotic. They both reproduce through binary fission (division). There are three mandatory organelles that every cell of both types has – cell membrane, cytoplasm and genetic information.  
+ 
+            Prokaryotic cells are the smaller and simpler ones. They were the first cells to arise on Earth. Their genetic information (DNA) is placed directly in the cytoplasm and not in a cell nucleus. Another thing they do not have are mitochondria. This type of cells is found in bacteria and some single-celled organisms.  
+        
+            Eukaryotic cells are much more complex. Their genetic information is positioned in a cell nucleus, and they have mitochondria. These cells compose animals, plants, fungi, some single-celled organisms and of course humans.
+
+        
+            <h1 class="font-bold border-y-4 border-gray-900 m-0 py-10 text-3xl uppercase text-center">Animal cell</h1>
+            Animal cells are the cells that humans and animals consist of. They are Eukaryotic and here is their structure:  
+        
+            <b> ⦿ Cell membrane</b> 
+            A lipid bilayer which has selective permeability which means not all substances will be able to pass through. In the membrane there is cholesterol that provides integrity and support.  
+            <img class="h-72 border-2 border-gray-900 mt-10 py-4 hover:h-96 w-full delay-150 duration-300 bg-white object-contain rounded-full" src="https://pixfeeds.com/images/21/511840/640-86007545-cell-membrane.jpg" alt="Cell membrane">
+            <b> ⦿ Nucleus</b>
+            Regarded as the control center of a cell because it contains most of the genetic material. The nucleus regulates metabolism, growth and reproduction of the cell.  
+            <img class="h-72 border-2 border-gray-900 mt-10 py-4 hover:h-96 w-full delay-150 duration-300 bg-white object-contain rounded-full" src="https://static.vecteezy.com/ti/vetor-gratis/p3/696109-anatomia-do-nucleo-de-celulas-animais-gratis-vetor.jpg" alt="">
+            <b> ⦿ Cytoplasm</b>
+            The material, enclosed by the cell membrane, except for the nucleus. It contains water, the organelles, cytosol and cytoplasmic inclusions.  
+            <img class="float-right h-80 border-2 border-gray-900 m-20 p-4 hover:m-8 hover:h-96 delay-150 duration-300 bg-white object-contain rounded-full" src="https://as1.ftcdn.net/v2/jpg/02/78/44/30/1000_F_278443032_amSCpssauMDfKV4zlm8J8tyruHRJqPgG.jpg" alt="">
+            <b> ⦿ Endoplasmic reticulum (ER)</b>
+            The transportation system of the cell. It is made up of two subunits: rough ER, involved in protein synthesis and smooth ER, involved in lipid synthesis.  
+        
+            <b> ⦿ Golgi apparatus</b>
+            Packages and secrets biomolecules, sending them to their destination.  
+        
+            <b> ⦿ Mitochondrion </b>
+            The powerhouse of the cell. It generates ATP which is used by the cell as a source of chemical energy.  
+        
+            <b> ⦿ Lysosome </b>
+            The waste disposal system of the cell. It contains digestive enzymes and so its main function is degradation of polymers.  
+        
+            <b> ⦿ Ribosome</b>Links amino acids together to form polypeptide chains a. k. a. proteins.  
+
+
+            <h1 class="font-bold font-sans border-y-4 border-gray-900 m-0 py-10 text-3xl uppercase text-center">Plant cell</h1>
+         Plant cells are Eukaryotic as well, but they differ from animal ones. They are made of:  
+         
+         <b> ⦿ Cell wall</b>
+         The outer layer of a plant cell, responsible for the cell's strength, rigidity and resiliency against mechanical stress.  
+          <b> ⦿ Cell membrane </b> 
+        <img class="float-right h-80 w-96 border-2 border-gray-900 m-10 hover:m-10 hover:h-96 delay-150 duration-300 bg-white object-contain rounded-full" src="https://media.istockphoto.com/id/902920716/vector/cartoon-plant-cell-anatomy-banner-card-poster-vector.jpg?s=612x612&w=0&k=20&c=S2SI64gHNWGcjjKpwoR2kHGCSfgI78aajR3NdnQapys=" alt="">
+         <b> ⦿ Nucleus  </b>
+        
+         <b> ⦿ Cytoplasm </b> 
+        
+         <b> ⦿ Endoplasmic reticulum </b> 
+        
+         <b> ⦿ Mitochondrion </b>  
+        
+         <b> ⦿ Golgi apparatu</b>s  
+        
+         <b> ⦿ Ribosome </b> 
+        
+         <b> ⦿ Lysosome</b>  
+        
+         <b> ⦿ Vacuole</b>
+         The largest structure in the plant cell. It contains water, organic and inorganic molecules. A vacuole's functions vary but in general it isolates harmful materials and waste products, contains water and regulates pressure in the cell.  
+        
+         <b> ⦿ Chloroplast</b>
+         Organelle that contains chlorophyll and plays a very important role in photosynthesis. It converts salt, water and carbon dioxide into oxygen, glucose and other organic materials, using light energy.</p>
+      </div>
         </div>
 
         <div class="h-screen bg-gradient-to-b from-cyan-300 to-rose-100">
           <h1
             id="Biochemistry"
-            style="
-              background-image: url('/SciEdify/app/templates/images/pink_flowers.jpg');
-            "
-            class="text-6xl uppercase py-10 border-b-4 border-gray-900"
+            class="bg-gray-900 border-8 border-cyan-300 text-white text-6xl uppercase py-10"
           >
             Biochemistry
           </h1>
@@ -148,10 +210,7 @@
         <div class="h-screen bg-gradient-to-b from-rose-100 to-indigo-200">
           <h1
             id="Botanic"
-            style="
-              background-image: url('/SciEdify/app/templates/images/pink_flowers.jpg');
-            "
-            class="text-6xl uppercase py-10 border-b-4 border-gray-900"
+            class="bg-gray-900 border-8 border-rose-100 text-white text-6xl uppercase py-10"
           >
             Botanic
           </h1>
@@ -161,10 +220,7 @@
         <div class="h-screen bg-gradient-to-b from-indigo-200 to-yellow-200">
           <h1
             id="Zoology"
-            style="
-              background-image: url('/SciEdify/app/templates/images/pink_flowers.jpg');
-            "
-            class="text-6xl uppercase py-10 border-b-4 border-gray-900"
+            class="bg-gray-900 border-8 border-indigo-200 text-white text-6xl uppercase py-10"
           >
             Zoology
           </h1>
@@ -174,10 +230,7 @@
         <div class="h-screen bg-gradient-to-b from-yellow-200 to-orange-200">
           <h1
             id="HumanSystems"
-            style="
-              background-image: url('/SciEdify/app/templates/images/pink_flowers.jpg');
-            "
-            class="text-6xl uppercase py-10 border-b-4 border-gray-900"
+            class="bg-gray-900 border-8 border-yellow-200 text-white text-6xl uppercase py-10"
           >
             Human Systems
           </h1>
@@ -187,10 +240,7 @@
         <div class="h-screen bg-gradient-to-b from-orange-200 to-violet-300">
           <h1
             id="Genetic"
-            style="
-              background-image: url('/SciEdify/app/templates/images/pink_flowers.jpg');
-            "
-            class="text-6xl uppercase py-10 border-b-4 border-gray-900"
+            class="bg-gray-900 border-8 border-orange-200 text-white text-6xl uppercase py-10"
           >
             Genetic
           </h1>
@@ -200,10 +250,7 @@
         <div class="h-screen bg-gradient-to-b from-violet-300 to-teal-200">
           <h1
             id="Evolution"
-            style="
-              background-image: url('/SciEdify/app/templates/images/pink_flowers.jpg');
-            "
-            class="text-6xl uppercase py-10 border-b-4 border-gray-900"
+            class="bg-gray-900 border-8 border-violet-300 text-white text-6xl uppercase py-10"
           >
             Evolution
           </h1>
@@ -213,10 +260,7 @@
         <div class="h-screen bg-gradient-to-b from-teal-200 to-amber-200">
           <h1
             id="Immunology"
-            style="
-              background-image: url('/SciEdify/app/templates/images/pink_flowers.jpg');
-            "
-            class="text-6xl uppercase py-10 border-b-4 border-gray-900"
+            class="bg-gray-900 border-8 border-teal-200 text-white text-6xl uppercase py-10"
           >
             Immunology
           </h1>
