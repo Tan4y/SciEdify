@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.template import loader
 from .models import Mathematics
 
-def Math(request):
+def math(request):
      lessons = Mathematics.objects.all()
      return render(request, '/mathematics.html',
      {
