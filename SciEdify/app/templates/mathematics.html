@@ -74,8 +74,8 @@
             <div><a href="#FunctionsAndGraphics" class="delay-100 duration-200 hover:font-bold">Functions and Graphics</a></div>
           </div>
         </div>
-        <div class="h-screen bg-gradient-to-b from-cyan-100 to-cyan-300">
-          <br id="Trigonometry">
+        <div id="Trigonometry" class="h-screen bg-gradient-to-b from-cyan-100 to-cyan-300">
+          <br>
           <h1
             class="bg-gray-900 border-8 border-cyan-100 text-white text-6xl uppercase py-10 mx-7"
           >
@@ -84,8 +84,8 @@
           <p class="py-10"></p>
         </div>
 
-        <div class="h-screen bg-gradient-to-b from-cyan-300 to-rose-100">
-          <br id="3DGeometry">
+        <div id="3DGeometry" class="h-screen bg-gradient-to-b from-cyan-300 to-rose-200">
+          <br>
           <h1
             class="bg-gray-900 border-8 border-cyan-300 text-white text-6xl uppercase py-10 mx-7"
           >
@@ -94,18 +94,18 @@
           <p class="py-10"></p>
         </div>
 
-        <div class="h-screen bg-gradient-to-b from-rose-100 to-indigo-200">
-          <br id="Probability">
+        <div id="Probability" class="h-screen bg-gradient-to-b from-rose-200 to-yellow-200">
+          <br>
           <h1
-            class="bg-gray-900 border-8 border-rose-100 text-white text-6xl uppercase py-10 mx-7"
+            class="bg-gray-900 border-8 border-rose-200 text-white text-6xl uppercase py-10 mx-7"
           >
             Probability
           </h1>
           <p class="py-10"></p>
         </div>
 
-        <div class="h-screen bg-gradient-to-b from-yellow-200 to-orange-200">
-          <br id="2DGeometry">
+        <div id="2DGeometry" class="h-screen bg-gradient-to-b from-yellow-200 to-orange-200">
+          <br>
           <h1
             class="bg-gray-900 border-8 border-yellow-200 text-white text-6xl uppercase py-10 mx-7"
           >
@@ -114,8 +114,8 @@
           <p class="py-10"></p>
         </div>
 
-        <div class="h-screen bg-gradient-to-b from-orange-200 to-violet-300">
-          <br id="Algebra">
+        <div id="Algebra" class="h-screen bg-gradient-to-b from-orange-200 to-violet-300">
+          <br>
           <h1
             class="bg-gray-900 border-8 border-orange-200 text-white text-6xl uppercase py-10 mx-7"
           >
@@ -124,14 +124,16 @@
           <p class="py-10"></p>
         </div>
 
-        <div class="h-screen bg-gradient-to-b from-violet-300 to-teal-200">
-          <br id="FunctionsAndGraphics">
+        <div id="FunctionsAndGraphics" class="h-screen bg-gradient-to-b from-violet-300 to-teal-200">
+          {% for math in mathematics %}
+          <br>
           <h1
             class="bg-gray-900 border-8 border-violet-300 text-white text-6xl uppercase py-10 mx-7"
           >
-            Functions and Graphics
+            {{ math.title }}
           </h1>
-          <p class="py-10"></p>
+          <p class="py-10"> {{ math.text }} </p>
+          {% endfor %}
         </div>
 
         <a

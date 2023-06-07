@@ -1,6 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
+from .models import Mathematics
+
+def Math(request):
+     lessons = Mathematics.objects.all()
+     return render(request, '/mathematics.html',
+     {
+          'math': lessons, 
+     })
 
 def app(request):
      template = loader.get_template('homepage.html')
